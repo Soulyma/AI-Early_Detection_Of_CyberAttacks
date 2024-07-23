@@ -15,24 +15,5 @@ from imblearn.over_sampling import SMOTE
 
 sm = SMOTE(sampling_strategy='all',n_jobs=-1,k_neighbors=3)
 
-X_res, y_res = sm.fit_resample(X, y)
-
-freq =Counter(y_res)
-
-print(freq)
-
-print(Counter(y))
-
-### Assuming X and y are your feature matrix and target vector
-
-enn = EditedNearestNeighbours(n_jobs=-1)
-
-X_resampled, y_resampled = enn.fit_resample(X_res, y_res)
-
-freq =Counter(y_resampled)
-
-print(freq)
-
-print(Counter(y_res))
 
 ```
