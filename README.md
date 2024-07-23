@@ -9,8 +9,6 @@ for that I used the 'SMOTE' library in order to augment the data
 
 '''
 
-...
-
 from imblearn.under_sampling import EditedNearestNeighbours
 from imblearn.over_sampling import SMOTE
 sm = SMOTE(sampling_strategy='all',n_jobs=-1,k_neighbors=3)
