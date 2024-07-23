@@ -7,11 +7,11 @@ and the other one to predict the kind of the cyber attack.
 While training the model to predict the kind of the cyber attack, the first attempt did not give good results
 for that I used the 'SMOTE' library in order to augment the data 
 
-'''
+```
 
-from imblearn.under_sampling import EditedNearestNeighbours
+** from imblearn.under_sampling import EditedNearestNeighbours **
 
-from imblearn.over_sampling import SMOTE
+** from imblearn.over_sampling import SMOTE **
 
 sm = SMOTE(sampling_strategy='all',n_jobs=-1,k_neighbors=3)
 
@@ -35,4 +35,4 @@ print(freq)
 
 print(Counter(y_res))
 
-'''
+```
